@@ -1,0 +1,83 @@
+.skillscert {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.skillscert-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillscert-item {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  color: #343a40;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.organization {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.date {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.description {
+  color: #495057;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .skillscert {
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .skillscert-item {
+    padding: 1rem;
+  }
+}
+
+@media print {
+  .skillscert {
+    padding: 0;
+    box-shadow: none;
+  }
+  .skillscert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+  }
+}
